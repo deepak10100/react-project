@@ -66,7 +66,7 @@ function Ecommerce() {
           <p>No products found</p>
         ) : (
           filteredData.map((item) => (
-            <div key={item.id} className="bg-yellow-100 p-4 rounded-md shadow-md w-72">
+            <div key={item.id} className="bg-white p-4 rounded-md shadow-md w-72">
               <img src={item.image} alt={item.title} className="h-40 mx-auto object-contain" />
               <h3 className="font-bold mt-2">{item.title}</h3>
               <p className="text-sm mt-1">{item.description.slice(0, 80)}...</p>
