@@ -4,26 +4,23 @@ import Ecommerce from './components/Ecommerce'
 import Navbar from './components/Navbar'
 import Form from './components/Form'
 import AddTodo from './components/AddTodo'
-
-
-
 export default function App() {
 
   return (
     <>
-      
- <BrowserRouter>
-        <Navbar/> 
+
+      <BrowserRouter>
+        <Navbar />
         <main>
           <Routes>
-        <Route path="/ecommerce" element={<Ecommerce />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="/todo" element={<AddTodo />} />
-        </Routes>
+            <Route path="/ecommerce" element={<Ecommerce />} />
+            <Route path="/form" element={<Form />} />
+            <Route path="/todo" element={<AddTodo />} />
+          </Routes>
         </main>
       </BrowserRouter>
-     
-    
+
+
     </>
   )
 }
