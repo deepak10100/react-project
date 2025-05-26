@@ -12,7 +12,6 @@ export default function Navbar() {
                 <li><NavLink to={'/'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':""}>Home</NavLink></li>
                 <li><NavLink to={'/ecommerce'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':""}>Ecommerce</NavLink></li>
                 <li><NavLink to={'/form'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':""}>Form</NavLink></li>
-                <li><NavLink to={'/reactjs'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':""}>React Js</NavLink></li>
                 <li><NavLink to={'/todo'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':""}>Todo Redux-toolkit</NavLink></li>
             </ul>
         </nav>

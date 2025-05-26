@@ -18,7 +18,7 @@ export default function App() {
         <main>
           <Routes>
         <Route path="/ecommerce" element={<Ecommerce />} />
-        <Route path="/reactjs" element={<ReactJs/>} />
+      
         <Route path="/form" element={<Form />} />
         <Route path="/todo" element={<AddTodo />} />
         </Routes>
