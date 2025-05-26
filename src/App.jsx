@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Ecommerce from './components/Ecommerce'
 import Navbar from './components/Navbar'
 import Form from './components/Form'
-import ReactJs from './components/ReactJs'
 import AddTodo from './components/AddTodo'
 
 
