@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Ecommerce from './components/Ecommerce'
 import Navbar from './components/Navbar'
@@ -18,7 +18,6 @@ export default function App() {
         <main>
           <Routes>
         <Route path="/ecommerce" element={<Ecommerce />} />
-      
         <Route path="/form" element={<Form />} />
         <Route path="/todo" element={<AddTodo />} />
         </Routes>
