@@ -7,6 +7,8 @@ import AddTodo from './components/AddTodo'
 import RandomQuote from './components/RandomQuote'
 import AllFormInput from './components/AllFormInput'
 import Todo from './components/Todo'
+import Footer from './components/Footer'
+import DarkMode from './components/DarkMode'
 export default function App() {
 
   return (
@@ -22,8 +24,10 @@ export default function App() {
             <Route path="/random" element={<RandomQuote />} />
             <Route path="/allform" element={<AllFormInput />} />
             <Route path="/reacttodo" element={<Todo />} />
+            <Route path="/darkmode" element={< DarkMode />} />
           </Routes>
         </main>
+        <Footer/>
       </BrowserRouter>
 
 

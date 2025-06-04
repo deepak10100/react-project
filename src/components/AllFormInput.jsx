@@ -64,7 +64,7 @@ function AllFormInput() {
     
   return (
     <>
-    <div class="max-w-2xl mx-auto px-4 " style={{backgroundColor:colored}}>
+    <div class="max-w-2xl mx-auto px-4" style={{backgroundColor:colored}}>
   <h2 class="text-2xl font-bold mb-6 text-center">Controlled Input Form </h2>
   <form class="bg-white shadow-md rounded px-6 py-8"  onSubmit={submithandle}>
     

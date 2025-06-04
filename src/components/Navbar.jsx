@@ -16,6 +16,7 @@ export default function Navbar() {
                 <li><NavLink to={'/random'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':"hover:bg-amber-200 text-white hover:text-black p-2  rounded-sm font-medium"}>RandomQuote</NavLink></li>
                 <li><NavLink to={'/allform'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':"hover:bg-amber-200 text-white hover:text-black p-2  rounded-sm font-medium"}>All Input Form</NavLink></li>
                 <li><NavLink to={'/reacttodo'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':"hover:bg-amber-200 text-white hover:text-black p-2  rounded-sm font-medium"}>React Todo</NavLink></li>
+                <li><NavLink to={'/darkmode'}  className={({isActive}) =>isActive?' bg-amber-200 text-black p-2  rounded-sm font-medium':"hover:bg-amber-200 text-white hover:text-black p-2  rounded-sm font-medium"}>Dark Mode</NavLink></li>
             </ul>
         </nav>
     </header>

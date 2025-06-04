@@ -26,24 +26,25 @@ function Ecommerce() {
 
   // ✅ Unified Filtering Logic — NO REPETITION
   const filteredData = data.filter((item) => {
-    const matchesCategory =
-      selectedCategory === "All" || item.category === selectedCategory;
-
-    const matchesSearch = item.title
-      .toLowerCase()
-      .includes(searchTerm.toLowerCase());
-
+    
+    const matchesCategory = selectedCategory === "All" || item.category === selectedCategory;
+    const matchesSearch = item.title.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearch;
+
   });
+  {/* Category  */}
+  let categories = ['All',...new Set(data.map((item)=> item.category))]
 
   return (
     <>
       {/* Category Buttons */}
       <div className="flex gap-3 justify-center mt-5 flex-wrap">
-        <button onClick={() => setSelectedCategory("All")} className="bg-yellow-400 px-4 py-2">All</button>
-        <button onClick={() => setSelectedCategory("men's clothing")} className="bg-yellow-400 px-4 py-2">Men</button>
-        <button onClick={() => setSelectedCategory("women's clothing")} className="bg-yellow-400 px-4 py-2">Women</button>
-        <button onClick={() => setSelectedCategory("electronics")} className="bg-yellow-400 px-4 py-2">Electronics</button>
+        {
+          categories.map((category)=>(
+             <button onClick={() => setSelectedCategory(category)} className="bg-yellow-400 px-4 py-2">{category}</button>
+          ))
+        }
+
       </div>
 
       {/* Search Box */}
